@@ -302,9 +302,7 @@ end
 
 function toggleLock(veh)
     local vehPlate = GetVehicleNumberPlateText(veh)
-    print("Plate: " .. vehPlate)
     local lockStatus = GetVehicleDoorLockStatus(veh)
-    print("Lock status: " .. lockStatus)
 
     ESX.TriggerServerCallback("cdk-keys:server:hasKey", function(cb)
         if cb then
